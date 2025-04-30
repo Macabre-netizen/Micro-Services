@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micro-services Login Page</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <div>
+            <label>Username:</label>
+            <input type="text" name="username">
+        </div>
+        <div>
+            <label>Password:</label>
+            <input type="password" name="password">
+        </div>
+        <div>
+            <p><input type="submit" value="submit"></p>
+        </div>
+        <div><h1>{{content}}</h1></div>
+    </form>
+    <div>
+        <p>Dont have an account? <a href="{{ url_for('signup') }}">SIGNUP</a> </p>
+    </div>
+    
+</body>
+</html>
