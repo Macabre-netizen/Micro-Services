@@ -60,8 +60,3 @@ class USER_AUTHENTICATION:
         self.records.close_record_file()
 
 
-
-
-# ua = USER_AUTHENTICATION("Ibra", None, None, None, None)
-# val = ua.check_user_email()
-# print(val)
