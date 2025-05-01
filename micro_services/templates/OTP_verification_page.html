@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micro-services OTP page</title>
+</head>
+<body>
+    <div>
+        <h3>
+            Weve sent an OTP to your email, check your email for the 6 digit code
+            PLease check your spam inbox for the code, as it may have been sent there.
+        </h3>
+    </div>
+    <form method="post">
+        <h1>{{content}}</h1>
+        <div>
+            <label>OTP:</label>
+            <input type="text" name="otp_code">
+        </div>
+        <div>
+            <button>Submit</button>
+        </div>
+    </form>
+    <div>
+        <a href="{{ url_for('OTP_verification') }}">send another OTP</a>
+    </div>
+    
+</body>
+</html>

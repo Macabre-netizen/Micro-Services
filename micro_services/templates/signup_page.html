@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micro-services Signup Page</title>
+</head>
+<body>
+    <form method="post">
+        <div>
+            <label>New Username:</label>
+            <input type="text" name="new_username">
+        </div>
+        <div>
+            <label>First Name:</label>
+            <input type="text" name="first_name">
+        </div>
+        <div>
+            <label>Last Name:</label>
+            <input type="text" name="last_name">
+        </div>
+        <div>
+            <label>Email:</label>
+            <input type="text" name="email">
+        </div>
+        <div>
+            <label>Password:</label>
+            <input type="password" name="new_password">
+        </div>
+        <div>
+            <label>Confirm Password:</label>
+            <input type="password" name="confirm_password"> 
+        </div>
+        <div>
+            <input type="submit" value="submit">
+        </div>
+    </form>
+    <div>
+        <p>{{content}}</p>
+    </div>
+    <div>
+        <p>Already have an account? <a href="{{ url_for('login') }}">LOGIN</a> </p>
+    </div>
+    
+</body>
+</html>
